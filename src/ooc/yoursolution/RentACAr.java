@@ -16,7 +16,7 @@ import ooc.enums.Month;
  */
 
     public class RentACAr implements RentACarInterface{
-    ArrayList<Make> Cars;
+    ArrayList<car> Cars;
     
     
     public RentACAr(){
@@ -24,16 +24,14 @@ import ooc.enums.Month;
     }
     @Override
     public List<CarInterface> getCars() {
-     
-        
-            
+    return (List<CarInterface>) Cars;            
     }
 
 
     @Override
     public void setCars(List<CarInterface> cars) {
         
-        this.CarInterface = 
+       return 
     }
 
     @Override

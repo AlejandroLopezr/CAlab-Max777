@@ -14,37 +14,40 @@ import ooc.enums.Month;
  *
  * @author maxim
  */
-public class car implements CarInterface{
- /*   
+public abstract class car implements CarInterface{
+ 
     ArrayList<car> items;
-    
+    double rate;
+    int ID;
     public car(){
         items = new ArrayList<>();
     }
-*/
+
+    private Make make; 
+    
     @Override
     public Map<Month, boolean[]> createAvailability() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+      
     }
 
     @Override
     public Make getMake() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    return this.make;
     }
 
     @Override
     public void setMake(Make make) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       this.make = make;    
     }
 
     @Override
-    public double getRate() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double getRate(double rate) {
+    return this.rate;
     }
 
     @Override
     public void setRate(double rate) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    this.rate = rate;
     }
 
     @Override
@@ -59,7 +62,7 @@ public class car implements CarInterface{
 
     @Override
     public int getId() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       return this.ID;
     }
 
     @Override
