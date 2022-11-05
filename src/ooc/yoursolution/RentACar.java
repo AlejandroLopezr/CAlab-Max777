@@ -53,7 +53,6 @@ public class RentACar implements RentACarInterface {
 
     @Override
     public boolean checkAvailability(Month month, int day, Make make, int lengthOfRent) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     //Method to check availability of a car in a specific day and duration 
     //creating variable to control the en of the checking 
     
@@ -75,6 +74,7 @@ public class RentACar implements RentACarInterface {
        } 
         
     }
+    return false;
     }
 
     @Override
