@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package rentacar; // GROUP: Maximiliano Cruz & Alejandro 
+package rentacar; // GROUP: Maximiliano Cruz & Melvin Lopez 2021372
 
 // This line will give you an error until you create the needed class.
 import ooc.yoursolution.BookingSystem;
