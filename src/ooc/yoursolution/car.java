@@ -18,27 +18,32 @@ import ooc.enums.Month;
 public abstract class car implements CarInterface{
  
     ArrayList<car> items;
-    double rate;
-    int ID;
-    public car(){
+  
+    public car(int id, Make make, double rate){
         items = new ArrayList<>();
     }
-
+     double rate;
+    int ID;
     private Make make; 
     private Month month;
+      private Map<Month, Boolean[]> map;
     
     @Override
-    public Map<Month, boolean[]> createAvailability() {
-      if(numberOfDays == 0;){
-          int numberOfDays;
-       
-      return.true    
-      }
-      else {
-             return.false;
-      }
-      
-      
+    public Map createAvailability() {
+     map = new HashMap<>();
+        map.put(Month.JANUARY, new Boolean[31]);
+        map.put(Month.FEBRUARY, new Boolean[28]);
+        map.put(Month.MARCH, new Boolean[31]);
+        map.put(Month.APRIL, new Boolean[30]);
+        map.put(Month.MAY, new Boolean[31]);
+        map.put(Month.JUNE, new Boolean[30]);
+        map.put(Month.JULY, new Boolean[31]);
+        map.put(Month.AUGUST, new Boolean[31]);
+        map.put(Month.SEPTEMBER, new Boolean[30]);
+        map.put(Month.OCTOBER, new Boolean[31]);
+        map.put(Month.NOVEMBER, new Boolean[30]);
+        map.put(Month.DECEMBER, new Boolean[31]);
+        return map;
     }
 
     @Override
