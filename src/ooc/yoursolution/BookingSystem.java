@@ -10,7 +10,7 @@ import java.io.IOException;
 
 /**
  *
- * @author maxim
+ * @author Melvn Alejandor Lopez 
  */
 public class BookingSystem implements BookingSystemInterface{
 
