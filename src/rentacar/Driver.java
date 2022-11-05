@@ -16,11 +16,10 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-// INCLUDE HERE THE LINK TO THE GIT REPOSITORY AS A COMMENT!!!!
+// https://github.com/Maxxo95/CAlab-Max777
 
 
-// INCLUDE HERE THE FULL NAME AND STUDENT NUMBER OF BOTH TEAM MEMBERS 
-// AS A COMMENT!!!!
+//Maximiliano Cruz Cortes 2021339
 
 public class Driver {
 
