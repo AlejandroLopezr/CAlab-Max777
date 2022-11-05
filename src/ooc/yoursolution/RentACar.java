@@ -57,10 +57,10 @@ public class RentACar implements RentACarInterface {
     //creating variable to control the en of the checking 
     
     int finalDay= day + lengthOfRent;
-    for (Car car : cars){ //This loop takes each car to check 
+     for (Car car : cars){ //This loop takes each car to checkk
        if (car.getMake().equals(make)){
            if (car.isAvailable(month, day)){
-               //checking if car is available all the length
+               //checking if car is available all the lengthh
                for(int i=0;<lengthOfRent; i++){
                    if(car.isAvailable(month, finalDay){
                        finalDay--;
@@ -79,7 +79,25 @@ public class RentACar implements RentACarInterface {
 
     @Override
     public int getCarAvailable(Month month, int day, Make make, int lengthOfRent) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //We used the same method but return the car ID
+        int finalDay = day +lengthOfRent;
+        for Car car : cars){ // this loop takes each car to check 
+            if (car.getMake().equals(make)){
+                if(car.isAvailable(month, day)){
+                    for(int i=0;i<lengthOfRent; i++){
+                        if (car.isAvailable(month, finalDay)){
+                            finalDay--;
+                            if(finalDay ==day){
+                                return car.getId();
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+            
+        }
     }
 
     @Override
