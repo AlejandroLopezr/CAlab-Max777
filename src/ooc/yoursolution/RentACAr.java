@@ -36,7 +36,7 @@ import ooc.enums.Month;
 
     @Override
     public String getName() {
-        this.Name = Name;
+        this.name = name;
     }
 
     @Override

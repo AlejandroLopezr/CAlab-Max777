@@ -6,6 +6,7 @@
 package ooc.yoursolution;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import ooc.enums.Make;
 import ooc.enums.Month;
@@ -24,9 +25,19 @@ public abstract class car implements CarInterface{
     }
 
     private Make make; 
+    private Month month;
     
     @Override
     public Map<Month, boolean[]> createAvailability() {
+      if(numberOfDays == 0;){
+          int numberOfDays;
+       
+      return.true    
+      }
+      else {
+             return.false;
+      }
+      
       
     }
 
@@ -52,7 +63,7 @@ public abstract class car implements CarInterface{
 
     @Override
     public Map<Month, boolean[]> getAvailability() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     }
 
     @Override
