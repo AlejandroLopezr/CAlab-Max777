@@ -15,14 +15,14 @@ import ooc.enums.Month;
  *
  * @author maxim
  */
-public final class car implements CarInterface { // starting the class implementing CarInterface & its parameters
+public final class Car implements CarInterface { // starting the class implementing CarInterface & its parameters
 // here we create the necessary variables to store  our data from the txt 
     // ArrayList<car> items;
     double rate; // double for the rate of cars 
     private Make make; // bring the enum data of the name of the cars saved in make
     int id; //id of the driver
      private Map<Month, Boolean[]> map; // had to research to realize we need a hash map to "map" our availability
-    public car(int id, Make make, double rate) { // the car object 
+    public Car(int id, Make make, double rate) { // the car object 
         //items = new ArrayList<>();
 
         this.id = id;

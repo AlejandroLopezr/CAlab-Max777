@@ -14,34 +14,36 @@ import ooc.enums.Month;
  *
  * @author maxim
  */
-
-    public class RentACAr implements RentACarInterface{
-    ArrayList<car> Cars;
-    
-    
-    public RentACAr(){
-        Cars = new ArrayList<>();
-    }
-    @Override
-    public List<CarInterface> getCars() {
-    return (List<CarInterface>) Cars;            
+public class RentACar implements RentACarInterface {
+//variables to store list of cars and name of the place
+    private List<Car> cars;
+ private String nameOfRentACar; 
+ //constructor
+    public RentACar() {
+     this.cars = cars;
+     this.nameOfRentACar = nameOfRentACar;
     }
 
-
     @Override
-    public void setCars(List<CarInterface> cars) {
+    public List getCars() {
+        return cars;
         
-       return 
+        //it return the list of cars that the company has
+    }
+
+    @Override
+    public void setCars(List cars) {
+        this.cars = cars;
     }
 
     @Override
     public String getName() {
-        this.name = name;
+     return nameOfRentACar;
     }
 
     @Override
     public void setName(String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       nameOfRentACar = name;
     }
 
     @Override
@@ -63,10 +65,5 @@ import ooc.enums.Month;
     public int getNumberOfCars() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
 
-    }
-
-
-    
-
+}

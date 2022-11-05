@@ -16,7 +16,8 @@ public class BookingSystem implements BookingSystemInterface{
 
     @Override
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
-       this
+      //This method receives a file using BufferedReader and it throws an exception in case it get any error
+ 
     }
      
 }
